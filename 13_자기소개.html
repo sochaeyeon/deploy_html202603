@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<title>온라인 프로필</title>
+	<meta charset="utf-8">
+    <style>
+        /* 전체 레이아웃 */
+        #container{
+            width: 1000px;
+            margin : 5px auto;
+        }
+
+        /* 사이드바 */
+        aside {
+            width: 300px;
+            height: 800px;
+            padding: 20px;
+            background-color: #ffefcc; 
+            float: left;
+            box-sizing: border-box;
+            border: 2px solid #ffce65;
+            box-shadow: 0px 0px 10px #a5a5a5;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        #namecard {
+            text-align: center;
+            color: rgb(0, 0, 0);
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+
+        #namecard img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        #detail {
+            margin-top: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        #sns {
+            box-sizing: border-box;
+            text-align: center;
+        }
+        #sns a {
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 40%;
+            background-color: white;
+            box-shadow: 0px 0px 5px #a5a5a5;
+            color: #000;
+        }
+        #sns a:hover {
+            background-color: #e4e2e2;
+            border: 2px solid #e4e2e2;
+        }
+
+        /* 메인 콘텐츠 */
+        #main {
+            padding: 20px;
+            float: left;
+            height: 800px;
+            box-sizing: border-box;
+            border: 2px solid #ffce65;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #a5a5a5;
+        }
+
+        /* 제목 스타일 */
+        .subtitle {
+            color: #333;
+            border-bottom: 3px solid #ffce65;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        table th {
+            background-color: #ffefcc;
+        }
+        table, tr, td, th {
+            border: 1px solid #ffce65;
+            border-collapse: collapse;
+            padding: 10px;
+            text-align: center  ;
+        }
+        mark {
+            background-color: #ffce65;
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <!-- 사이드바 -->
+        <aside>
+            <div id="namecard">
+                <img src="../media/너구리.png" alt="너구리;">
+                <h1>So Chaeyeon</h1>    
+                <p>프로그래밍 재밌다</p>
+            </div>
+            <div id="detail">
+                <p>😎 Incheon, Korea</p>
+                <p>🤯 test@naver.com</p>                                 
+            </div>
+            <div id="sns">
+                <h2>SNS</h2>
+                <h3><a href="#">클릭!</a></h3>
+            </div>           
+        </aside>
+        <div id="main">
+            <section>
+                <h2 class="subtitle">자기소개</h2>
+                <p><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</p>
+            </section>
+
+            <!-- 경력 -->
+            <section>
+                <h2 class="subtitle">Experience</h2>
+                <ul>
+                    <li>프론트엔드
+                        <ul>
+                            <li>HTML/CSS/JAVASCRIPT </li>
+                            <li>웹 페이지 잘 만들고 싶음 </li>
+                            <li>ㅠㅡㅠ</li> 
+                        </ul>
+                    </li>
+                    <li>백엔드
+                        <ul>
+                            <li>자바 잘함 </li>
+                            <li>오라클 더 잘함</li>
+                        </ul>                        
+                    </li>
+                </ul>             
+            </section>
+
+            <!-- 숙련도 -->
+            <section>
+                <h2 class="subtitle">보유 기술</h2>
+                <li style="list-style: none;"> 
+                    <ul>
+                        <li>자바 </li>
+                        <li>오라클</li>
+                    </ul>                        
+                </li>
+            </section>
+
+            <!-- 학력 -->
+            <section>
+                <h2 class="subtitle">Education</h2>
+                <table>
+                  <caption>학력 사항</caption>
+                  <thead>
+                      <tr>
+                          <th>출신학교</th>
+                          <th>전공</th>
+                          <th>기간</th>
+                          <th>구분</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>좋은대학교</td>
+                          <td>좋은학과</td>
+                          <td>2010.3 ~ 2013.2</td>
+                          <td>졸업</td>
+                      </tr>
+                      <tr>
+                          <td>꽤좋은고등학교</td>
+                          <td> - </td>
+                          <td>2007.3 ~ 2009.2</td>
+                          <td>졸업</td>
+                      </tr>
+                  </tbody>
+                </table>
+            </section>
+        </div>        
+    </div>
+</body>
+</html>
+
+​
