@@ -1,124 +1,103 @@
-<!doctype html>
-<html lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>온라인 프로필</title>
-	<meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
     <style>
-        /* 전체 레이아웃 */
-        #container{
-            width: 736px;
-            margin: 30px auto;
-            background: white;
-            box-shadow: 2px 2px 5px #746f6f;
-            border-radius: 10px;
+        #container {
+            width: 1500px;
+            margin: 5px auto;
             overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 2px 2px 5px;
         }
 
-        /* 사이드바 */
-        aside {
+        #aside {
+            color: rgb(255, 255, 255);
+            width: 400px;
+            height: 900px;
+            float: left;
+            text-align: center;
+            background: linear-gradient(180deg, rgb(255, 227, 227), rgb(255, 242, 218) 40% ,rgb(170, 222, 255));
+            box-shadow:  1px 2px 5px black;
+        }
+
+        .profileImg {
+            position: relative;
+            top: 30px;
             width: 300px;
-            height: 800px;
-            padding: 20px;
-            background-color: #ffefcc; 
-            float: left;
-            box-sizing: border-box;
-            border: 2px solid #ffce65;
-            
-            font-weight: bold;
-        }
-        #namecard {
-            text-align: center;
-            color: rgb(0, 0, 0);
-            box-sizing: border-box;
-            margin-bottom: 40px;
-        }
-
-        #namecard img {
-            width: 200px;
-            height: 200px;
             border-radius: 50%;
-            border: 4px solid white;
+            margin: 5px auto;
+            border: 5px solid white;
         }
-        #detail {
-            margin-top: 20px;
-            box-sizing: border-box;
-            text-align: center;
+
+        #namecard > h1, p, #sns{
+            position: relative;
+            top: 20px;
+            text-shadow: 0 0 5px rgb(0, 0, 0);
+            font-weight: bolder;
         }
-        
+
         #sns {
-            box-sizing: border-box;
-            text-align: center;
-        }
-        #sns a {
-            font-weight: bold;
-            text-decoration: none;
-            border: 2px solid white;
-            padding: 10px 20px;
-            border-radius: 40%;
-            background-color: white;
-            box-shadow: 0px 0px 5px #a5a5a5;
-            color: #000;
-        }
-        #sns a:hover {
-            background-color: #e4e2e2;
-            border: 2px solid #e4e2e2;
+            position: relative;
+            top: 30px;
+            width: 100%;
+            height: 100%;
+            margin: 5px auto;
+            background-color: rgb(255, 255, 255);
         }
 
-        /* 메인 콘텐츠 */
-        #main {
-            padding: 20px;
+        .snsImg {
+            width: 60px;
             float: left;
-            height: 800px;
-            box-sizing: border-box;
-            border: 2px solid #ffce65;
-            
-        }
-
-        /* 제목 스타일 */
-        .subtitle {
-            color: #333;
-            border-bottom: 3px solid #ffce65;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
+            padding: 20px;
         }
         
-        table th {
-            background-color: #ffefcc;
+        .snsImg:hover {
+            background-color: rgb(233, 233, 233);
         }
-        table, tr, td, th {
-            border: 1px solid #ffce65;
-            border-collapse: collapse;
-            padding: 10px;
-            text-align: center  ;
-        }
-        mark {
-            background-color: #ffce65;
-            padding: 0 5px;
-            border-radius: 5px;
+        
+        .detailImg {
+            width: 35px;
+            position: relative;
+            right: 10px;
+            top: 10px;
         }
 
+        #content {
+            width: 1100px;
+            height: 900px;
+            float: left;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+      
     </style>
 </head>
-
 <body>
     <div id="container">
-        <!-- 사이드바 -->
-        <aside>
+        <aside id="aside">
             <div id="namecard">
-                <img src="너구리.png" alt="너구리;">
+                <img src="../media/너구리.png" class="profileImg" alt="너구리">
                 <h1>So Chaeyeon</h1>    
-                <p>프로그래밍 재밌다</p>
-            </div>
+                <p>안녕하세요</p>
+            </div>   
             <div id="detail">
-                <p>😎 Incheon, Korea</p>
-                <p>🤯 test@naver.com</p>                                 
+                <p><img src="../media/house.png" class="detailImg" alt="집">Incheon, Korea</p>
+                <p><img src="../media/call.png" class="detailImg" alt="전화">010-1234-5678</p>                                 
             </div>
             <div id="sns">
-                <h2>SNS</h2>
-                <h3><a href="#">클릭!</a></h3>
+                <div>
+                    <h3><a href="javascript:;"><img class = snsImg src="../media/youtube.png" alt="유튜브"></a></h3>
+                    <h3><a href="javascript:;"><img class = snsImg src="../media/discord.png" alt="디스코드"></a></h3>
+                    <h3><a href="javascript:;"><img class = snsImg src="../media/mail.png" alt="g메일"></a></h3>
+                    <h3><a href="javascript:;"><img class = snsImg src="../media/kakao.png" alt="카카오톡"></a></h3>
+                </div>
             </div>           
         </aside>
-        <div id="main">
+        <div id="content">
             <section>
                 <h2 class="subtitle">자기소개</h2>
                 <p><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</p>
@@ -184,10 +163,7 @@
                   </tbody>
                 </table>
             </section>
-        </div>        
+        </div>
     </div>
 </body>
 </html>
-
-
-​
