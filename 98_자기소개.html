@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개</title>
     <style>
+
+        body {
+            background-color:  #f4f4f7;
+        }
         #container {
             position: relative;
             top: 20px;
@@ -13,17 +17,20 @@
             overflow: hidden;
             border-radius: 20px;
             box-shadow: 2px 2px 5px;
+            font-family: '돋움', Arial, Helvetica, sans-serif;
+            font-weight: bold;
         }
 
         #aside {
-            color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
             width: 400px;
             height: 800px;
             float: left;
             font-weight: bold;
             text-align: center;
-            background: linear-gradient(180deg, rgb(206, 247, 255),     rgb(237, 248, 255) 40% ,rgb(141, 133, 255));
+            background: rgb(221, 255, 166);
             box-shadow:  1px 2px 5px black;
+            
         }
 
         .profileImg {
@@ -32,29 +39,25 @@
             width: 300px;
             border-radius: 10%;
             margin: 5px auto;
-            border: 5px dotted #ffffff;
+            border: 5px solid #bbbbbb;
         }
 
-        #namecard > h1, p, #sns{
+        #namecard > div, #detail{
             position: relative;
-            top: 20px;
-            text-shadow: 0 0 1px rgb(0, 0, 0);
-            font-weight: bolder;
+            top: 30px;;
         }
 
         #sns {
-            position: relative;
-            top: 30px;
-            width: 100%;
-            height: 100%;
-            margin: 5px auto;
+            width: 400px;
+            height: 300px;        
             background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(255, 255, 255);
         }
 
         .snsImg {
             width: 60px;
             float: left;
-            padding: 20px;
+            padding: 10px 20px;
         }
         
         .snsImg:hover {
@@ -69,6 +72,7 @@
         }
 
         #content {
+            background-color: white;
             width: 900px;
             height: 800px;
             float: left;
@@ -76,20 +80,37 @@
             box-sizing: border-box;
         }
 
-      
+        .name {
+            font-size: 30px;
+        }
+        
+        .hi {
+            margin-top: 20px;
+        }
+
+        #aside-top {
+            border: 10px solid rgb(255, 240, 106);
+            height: 600px;
+        }
+        #detail {
+            box-sizing: border-box;
+        }
+        
     </style>
 </head>
 <body>
     <div id="container">
         <aside id="aside">
-            <div id="namecard">
-                <img src="media/너구리.png" class="profileImg" alt="너구리">
-                <h1>So Chaeyeon</h1>    
-                <p>안녕하세요</p>
-            </div>   
-            <div id="detail">
-                <p><img src="media/house.png" class="detailImg" alt="집">Incheon, Korea</p>
-                <p><img src="media/call.png" class="detailImg" alt="전화">010-1234-5678</p>                                 
+            <div id="aside-top">
+                <div id="namecard">
+                    <div class="name">So Chaeyeon</div>    
+                    <img src="media/너구리.png" class="profileImg" alt="너구리">
+                    <div class="hi">안녕하세요</div>
+                </div>   
+                <div id="detail">
+                    <div><img src="media/house.png" class="detailImg" alt="집">Incheon, Korea</div>
+                    <div><img src="media/call.png" class="detailImg" alt="전화">010-1234-5678</div>                                 
+                </div>
             </div>
             <div id="sns">
                 <div>
@@ -98,7 +119,8 @@
                     <h3><a href="javascript:;"><img class = snsImg src="media/mail.png" alt="g메일"></a></h3>
                     <h3><a href="javascript:;"><img class = snsImg src="media/kakao.png" alt="카카오톡"></a></h3>
                 </div>
-            </div>           
+                       
+            </div>
         </aside>
         <div id="content">
             <section>
@@ -169,5 +191,4 @@
         </div>
     </div>
 </body>
-
 </html>
