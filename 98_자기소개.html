@@ -10,7 +10,7 @@
         /* rgb(228,204,194) */
         /* rgb(249,244,241) */
         body {
-            background-color:  #f4f4f7;
+            background-color:  rgb(255, 255, 249);
         }
         #container {
             position: relative;
@@ -25,24 +25,14 @@
             color: rgb(122, 103, 99);
         }
 
-        #aside {
-            width: 400px;
-            height: 800px;
-            float: left;
-            font-weight: bold;
-            text-align: center;
-            background: rgb(228,204,194);
-            box-shadow:  1px 2px 5px black;
-            
-        }
-
         .profileImg {
             position: relative;
             top: 30px;
             width: 300px;
             border-radius: 10%;
             margin: 5px auto;
-            border: 5px solid #ffffff;
+            border: 7px solid rgb(255,239,213);
+            border-style: outset;
         }
 
         #namecard > div, #detail{
@@ -52,14 +42,16 @@
 
         #sns {
             width: 400px;
-            height: 300px;        
+            height: 80px;        
             background-color:  rgb(255,239,213);
+            
         }
 
         .snsImg {
             width: 60px;
             float: left;
-            padding: 10px 20px;
+            padding: 10px 18px;
+            border: 2px dotted rgb(228,204,194);
         }
         
         .snsImg:hover {
@@ -84,29 +76,45 @@
 
         .name {
             font-size: 30px;
+            background-color: rgb(255, 249, 249);
+            padding: 10px;
+            box-shadow: 2px 2px 5px rgb(228,204,194);
         }
         
         .hi {
             margin-top: 20px;
+            height: 100px;
+            font-size: 24px;
         }
 
-        #aside-top {
-            height: 600px;
+        .aside-top {
+            height: 699px;
         }
         #detail {
             box-sizing: border-box;
         }
         
+        .aside {
+            width: 400px;
+            height: 800px;
+            float: left;
+            font-weight: bold;
+            text-align: center;
+            background: rgb(228,204,194);
+            box-shadow:  1px 2px 5px black;
+        }
+
+        
     </style>
 </head>
 <body>
     <div id="container">
-        <aside id="aside">
-            <div id="aside-top">
+        <div class="aside">
+            <div class="aside-top">
                 <div id="namecard">
                     <div class="name">So Chaeyeon</div>    
                     <img src="media/다람쥐.png" class="profileImg" alt="다람쥐">
-                    <div class="hi">안녕하세요</div>
+                    <div class="hi">안녕하세요!!!!!!!</div>
                 </div>   
                 <div id="detail">
                     <div><img src="media/house.png" class="detailImg" alt="집">Incheon, Korea</div>
@@ -122,7 +130,7 @@
                 </div>
                        
             </div>
-        </aside>
+        </div>
         <div id="content">
             <section>
                 <h2 class="subtitle">자기소개</h2>
