@@ -161,3 +161,11 @@ body {
     background-color: rgb(228, 204, 194);
     color: white;
 }
+
+.experience-li-area {
+    margin: 20px 0px;
+}
+
+li {
+    margin: 5px 0px;
+}
