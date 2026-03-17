@@ -1,204 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자기소개</title>
-    <style>
-        /* rgb(255,239,213) */
-        /* rgb(247,209,200) */
-        /* rgb(228,204,194) */
-        /* rgb(249,244,241) */
-        body {
-            background-color:  rgb(255, 255, 249);
-        }
-        #container {
-            position: relative;
-            top: 20px;
-            width: 1300px;
-            margin: 5px auto;
-            overflow: hidden;
-            border-radius: 20px;
-            box-shadow: 2px 2px 5px;
-            /* font-family: '돋움', Arial, Helvetica, sans-serif; */
-            font-weight: bold;
-            color: rgb(122, 103, 99);
-        }
-
-        .profileImg {
-            position: relative;
-            top: 40px;
-            width: 300px;
-            border-radius: 10%;
-            margin: 5px auto;
-            border: 7px solid rgb(255,239,213);
-            border-style: outset;
-        }
-
-        #namecard > div, #detail{
-            position: relative;
-            top: 30px;;
-        }
-
-        #sns {
-            width: 400px;
-            height: 80px;        
-            background-color:  rgb(255,239,213);
-            
-        }
-
-        .snsImg {
-            width: 60px;
-            float: left;
-            padding: 10px 18px;
-            border: 2px dotted rgb(228,204,194);
-        }
-        
-        .snsImg:hover {
-            background-color:  rgb(233, 222, 203);
-        }
-        
-        .detailImg {
-            width: 35px;
-            position: relative;
-            right: 10px;
-            top: 10px;
-        }
-
-        #content {
-            background-color: rgb(249,244,241);
-            width: 900px;
-            height: 800px;
-            float: left;
-            padding: 30px;
-            box-sizing: border-box;
-        }
-
-        .name {
-            font-size: 30px;
-            background-color: rgb(255, 249, 249);
-            padding: 10px;
-        }
-        
-        .hi {
-            margin-top: 20px;
-            height: 100px;
-            font-size: 24px;
-        }
-
-        .aside-top {
-            height: 699px;
-        }
-        #detail {
-            box-sizing: border-box;
-        }
-        
-        .aside {
-            width: 400px;
-            height: 800px;
-            float: left;
-            font-weight: bold;
-            text-align: center;
-            background: rgb(228,204,194);
-            box-shadow: 1px 2px 5px rgb(167, 153, 148);
-            position: relative;
-            z-index: 10px;
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="98_자기소개.css">
 </head>
 <body>
     <div id="container">
-        <div class="aside">
+        <aside class="aside">
             <div class="aside-top">
                 <div id="namecard">
-                    <div class="name">소채연</div>    
-                    <img src="media/다람쥐.png" class="profileImg" alt="다람쥐">
+                    <div class="name">소채연</div>
+                    <img src="media/너구리.png" class="profileImg" alt="너구리">
                     <div class="hi">안녕하세요!!!!!!!</div>
-                </div>   
+                </div>
                 <div id="detail">
-                    <div><img src="media/house.png" class="detailImg" alt="집">Incheon, Korea</div>
-                    <div><img src="media/call.png" class="detailImg" alt="전화">010-1234-5678</div>                                 
+                    <div class="detail-item"><img src="media/house.png" class="detailImg">Incheon, Korea</div>
+                    <div class="detail-item"><img src="media/call.png" class="detailImg">010-1234-5678</div>
                 </div>
             </div>
             <div id="sns">
-                <div>
-                    <h3><a href="javascript:;"><img class = snsImg src="media/youtube.png" alt="유튜브"></a></h3>
-                    <h3><a href="javascript:;"><img class = snsImg src="media/discord.png" alt="디스코드"></a></h3>
-                    <h3><a href="javascript:;"><img class = snsImg src="media/mail.png" alt="g메일"></a></h3>
-                    <h3><a href="javascript:;"><img class = snsImg src="media/kakao.png" alt="카카오톡"></a></h3>
-                </div>
-                       
+                <a href="#"><img class="snsImg" src="media/youtube.png"></a>
+                <a href="#"><img class="snsImg" src="media/discord.png"></a>
+                <a href="#"><img class="snsImg" src="media/mail.png"></a>
+                <a href="#"><img class="snsImg" src="media/kakao.png"></a>
             </div>
-        </div>
-        <div id="content">
-            <section>
-                <h2 class="subtitle">자기소개</h2>
-                <div><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</div>
-            </section>
+        </aside>
 
-            <!-- 경력 -->
-            <section>
-                <h2 class="subtitle">Experience</h2>
-                <ul>
-                    <li>프론트엔드
-                        <ul>
-                            <li>HTML/CSS/JAVASCRIPT </li>
-                            <li>웹 페이지 잘 만들고 싶음 </li>
-                            <li>ㅠㅡㅠ</li> 
-                        </ul>
-                    </li>
-                    <li>백엔드
-                        <ul>
-                            <li>자바 잘함 </li>
-                            <li>오라클 더 잘함</li>
-                        </ul>                        
-                    </li>
-                </ul>             
-            </section>
+        <main id="main-area">
+            <nav id="top-nav">
+                <button onclick="showSection('intro')">자기소개</button>
+                <button onclick="showSection('experience')">경력</button>
+                <button onclick="showSection('skills')">보유기술</button>
+                <button onclick="showSection('education')">학력</button>
+            </nav>
 
-            <!-- 숙련도 -->
-            <section>
-                <h2 class="subtitle">보유 기술</h2>
-                <li style="list-style: none;"> 
+            <div id="content">
+                <section id="intro" class="tab-content active">
+                    <h2 class="subtitle">자기소개</h2>
+                    <div class="desc"><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</div>
+                </section>
+
+                <section id="experience" class="tab-content">
+                    <h2 class="subtitle">Experience</h2>
                     <ul>
-                        <li>자바 </li>
-                        <li>오라클</li>
-                    </ul>                        
-                </li>
-            </section>
+                        <li><strong>프론트엔드</strong>
+                            <ul>
+                                <li>HTML/CSS/JAVASCRIPT</li>
+                                <li>웹 페이지 잘 만들고 싶음</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
 
-            <!-- 학력 -->
-            <section>
-                <h2 class="subtitle">Education</h2>
-                <table>
-                  <caption>학력 사항</caption>
-                  <thead>
-                      <tr>
-                          <th>출신학교</th>
-                          <th>전공</th>
-                          <th>기간</th>
-                          <th>구분</th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                      <tr>
-                          <td>좋은대학교</td>
-                          <td>좋은학과</td>
-                          <td>2010.3 ~ 2013.2</td>
-                          <td>졸업</td>
-                      </tr>
-                      <tr>
-                          <td>꽤좋은고등학교</td>
-                          <td> - </td>
-                          <td>2007.3 ~ 2009.2</td>
-                          <td>졸업</td>
-                      </tr>
-                  </tbody>
-                </table>
-            </section>
-        </div>
+                <section id="skills" class="tab-content">
+                    <h2 class="subtitle">보유 기술</h2>
+                    <ul>
+                        <li>자바</li>
+                        <li>오라클</li>
+                    </ul>
+                </section>
+
+                <section id="education" class="tab-content">
+                    <h2 class="subtitle">Education</h2>
+                    <table class="edu-table">
+                        <thead>
+                            <tr><th>출신학교</th><th>전공</th><th>기간</th><th>구분</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>좋은대학교</td><td>좋은학과</td><td>2010.3~2013.2</td><td>졸업</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </main>
     </div>
+
+    
 </body>
 </html>
+<script>
+        function showSection(id) {
+            const sections = document.querySelectorAll('.tab-content');
+            sections.forEach(s => s.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+        }
+    </script>
