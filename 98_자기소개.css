@@ -82,9 +82,9 @@ body {
 }
 
 .snsImg {
-    width: 50px;
+    width: 55px;
     padding: 5px;
-    border: 2px dotted rgb(228, 204, 194);
+    /*order: 2px dot/ed rgb(228, 204, 194);*/
     transition: 0.2s;
 }
 
@@ -100,7 +100,7 @@ body {
     height: 100%;
 }
 
-#top-nav {
+#top-menu {
     height: 60px;
     background-color: rgb(247, 209, 200);
     display: flex;
@@ -109,7 +109,7 @@ body {
     gap: 10px;
 }
 
-#top-nav button {
+#top-menu button {
     padding: 10px 20px;
     border: none;
     background: white;
@@ -120,7 +120,7 @@ body {
     transition: 0.2s;
 }
 
-#top-nav button:hover {
+#top-menu button:hover {
     background: rgb(255, 239, 213);
 }
 
