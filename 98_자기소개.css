@@ -16,9 +16,8 @@ body {
     width: 1300px;
     height: 90vh;
     margin: 5vh auto;
-    background-color: white;
+    background-color:rgb(255, 255, 249);
     border-radius: 20px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
@@ -98,6 +97,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
+    animation: main-area 1s ease-in;
+    transform-origin: left;
+
 }
 
 #top-menu {
@@ -145,6 +147,11 @@ body {
 #intro {
     animation: slide 1s ease;
 }
+
+.intro-contents img {
+    border: 1px solid #eee;
+    border-radius: 30px;
+}
 .tab-content {
     display: none;
 }
@@ -189,7 +196,7 @@ li {
     margin: 5px 0px;
 }
 
-li img {
+.hobbyImg {
     margin: 10px;
     height: 200px;
     border-radius: 30px;
@@ -223,9 +230,26 @@ mark {
 .line {
     border-bottom: 1px dashed rgb(207, 184, 184);
     width: 90%;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 #hobby {
     animation: slide 1s ease;
+}
+
+@keyframes main-area {
+    0% {
+        transform: translateX(-500px);
+        transform: scaleX(0);
+    }  
+ 
+    100% {
+        transform: translateX(0px);
+        transform: scaleX(1);
+    }
+}
+
+.goal{
+    width: 40%;
+    height: 40%;
 }
