@@ -57,6 +57,7 @@ body {
 .hi {
     font-size: 22px;
     margin: 20px 0;
+    font-weight: bold;
 }
 
 .detail-item {
@@ -70,26 +71,26 @@ body {
     width: 25px;
     margin-right: 10px;
 }
-
-#sns {
+#detail-bot {
     width: 100%;
-    height: 80px;
+    height: 300px;
     background-color: rgb(255, 239, 213);
+}   
+#sns {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
 }
 
 .snsImg {
     width: 55px;
     padding: 5px;
+    margin: 10px 20px;
     /*order: 2px dot/ed rgb(228, 204, 194);*/
     transition: 0.2s;
 }
 
 .snsImg:hover {
     background-color: rgb(233, 222, 203);
-    transform: scale(1.1);
 }
 
 #main-area {
@@ -130,6 +131,20 @@ body {
     overflow-y: auto;
 }
 
+/* 자기소개 누르면 */
+@keyframes slide {
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+#intro {
+    animation: slide 1s ease;
+}
 .tab-content {
     display: none;
 }
@@ -162,10 +177,55 @@ body {
     color: white;
 }
 
+#experience {
+    animation: slide 1s ease;
+}
+
 .experience-li-area {
     margin: 20px 0px;
 }
 
 li {
     margin: 5px 0px;
+}
+
+li img {
+    margin: 10px;
+    height: 200px;
+    border-radius: 30px;
+    border: 1px solid rgb(207, 184, 184);
+    pointer-events: none;
+}
+
+mark {
+    border-radius: 5px;
+    background-color: rgb(255, 232, 190);
+}
+
+#skills {
+    animation: slide 1s ease;
+
+}
+
+#education {
+    animation: slide 1s ease;
+}
+
+#time {
+    padding: 10px 0px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 180px;
+    background-color: white;
+    border: 1px solid #eee;
+}
+
+.line {
+    border-bottom: 1px dashed rgb(207, 184, 184);
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+#hobby {
+    animation: slide 1s ease;
 }

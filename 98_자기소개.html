@@ -20,37 +20,57 @@
                     <div class="detail-item"><img src="media/call.png" class="detailImg">010-1234-5678</div>
                 </div>
             </div>
-            <div id="sns">
-                <a href="#"><img class="snsImg" src="media/youtube.png"></a>
-                <a href="#"><img class="snsImg" src="media/discord.png"></a>
-                <a href="#"><img class="snsImg" src="media/mail.png"></a>
-                <a href="#"><img class="snsImg" src="media/kakao.png"></a>
+            <div id="detail-bot">
+                <div id="time"></div>
+                <div id="sns">
+                    <a href="https://youtube.com/shorts/_8romrEIY6c?si=tNOIAbqoGDBR3tLQ" target="_blank"><img class="snsImg" src="media/youtube.png"></a>
+                    <a href="https://discord.com/" target="_blank"><img class="snsImg" src="media/discord.png"></a>
+                    <a href="https://ko.wikipedia.org/wiki/Gmail" target="_blank"><img class="snsImg" src="media/mail.png"></a>
+                    <a href="https://apps-kakaocorp.com/" target="_blank"><img class="snsImg" src="media/kakao.png"></a>
+                </div>
             </div>
         </aside>
 
         <main id="main-area">
             <nav id="top-menu">
                 <button onclick="showSection('intro')">자기소개</button>
-                <button onclick="showSection('experience')">경력</button>
+                <button onclick="showSection('experience')">경험</button>
                 <button onclick="showSection('skills')">보유기술</button>
                 <button onclick="showSection('education')">학력</button>
+                <button onclick="showSection('hobby')">취미</button>
             </nav>
 
             <div id="content">
                 <section id="intro" class="tab-content active">
                     <h2 class="subtitle">자기소개</h2>
-                    <div class="desc"><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</div>
+                    <div class="intro-contents">
+                        <div><mark>프로그래밍</mark>에 관심은.. 있읍니다.</div> 
+                        <div><br>현재 열심히 놀며 코딩 중!</div>
+                        <div><br>확실한 건 디자인은 못함</div> 
+                    </div>
                 </section>
 
                 <section id="experience" class="tab-content">
-                    <h2 class="subtitle">Experience</h2>
+                    <h2 class="subtitle">경험</h2>
                     <ul>
                         <li><strong>프론트엔드</strong>
                             <ul>
                                 <li>HTML/CSS/JAVASCRIPT</li>
+                                <li>지금 만들고 있는 거</li>
                                 <li>웹 페이지 잘 만들고 싶음</li>
                             </ul>
+                            <div class="line">
                         </li>
+                        <li><strong>백엔드</strong>
+                            <ul>
+                                <li>인데 프론트도 조금 만짐</li>
+                                <li>Spring</li>
+                                <li>대충 이런 거 만듦</li>
+                                <img src="media/이런거함.png" alt="">AI로 만들었더니 캡디가 이렇게 망했어요😇
+                            </ul>
+                            <div class="line">
+                        </li>
+                        
                     </ul>
                 </section>
 
@@ -59,14 +79,21 @@
                     <ul>
                         <li>JAVA</li>
                         <li>ORACLE</li>
-                        <li>밥먹기</li>
-                        <li>잠자기</li>
-                        <li>까먹기</li>
+                        <li>HTML/CSS/JAVASCRIPT</li>
+                        <li>밥 느리게 먹기</li>
+                        <li>간식 많이 먹기</li>
+                        <li>졸거나 잠자기</li>
+                        <li>수업 내용 까먹기</li>
+                        <li>누워있기</li>
+                    </ul>
+                    <h2 class="subtitle">자격증</h2>
+                    <ul>
+                        <li>없음</li>
                     </ul>
                 </section>
 
                 <section id="education" class="tab-content">
-                    <h2 class="subtitle">Education</h2>
+                    <h2 class="subtitle">학력</h2>
                     <table class="edu-table">
                             <tr>
                                 <th>출신학교</th>
@@ -88,6 +115,24 @@
                             </tr>
                     </table>
                 </section>
+                 <section id="hobby" class="tab-content">
+                    <h2 class="subtitle">취미</h2>
+                        <ul>
+                        <li><strong>그림</strong>
+                            
+                            <div class="line">
+                        </li>
+                        <li><strong>게임</strong>
+                            
+                            <div class="line">
+                        </li>
+                        <li><strong>기타등등</strong>
+                            
+                            <div class="line">
+                        </li>
+                        
+                    </ul>
+                </section>
             </div>
         </main>
     </div>
@@ -96,9 +141,20 @@
 </body>
 </html>
 <script>
-        function showSection(id) {
-            const sections = document.querySelectorAll('.tab-content');
-            sections.forEach(s => s.classList.remove('active'));
-            document.getElementById(id).classList.add('active');
-        }
-    </script>
+    setInterval(()=>{
+        let datetime = new Date();
+        let obj = document.querySelector("#time");
+        let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+        let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+        let time = datetime.getHours() + " : "
+                    + minutes + " : "
+                    + second;
+
+        obj.innerHTML = time;
+    }, 1000);
+    function showSection(id) {
+        const sections = document.querySelectorAll('.tab-content');
+        sections.forEach(s => s.classList.remove('active'));
+        document.getElementById(id).classList.add('active');
+    }
+</script>
