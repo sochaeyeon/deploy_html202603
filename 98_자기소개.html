@@ -1,174 +1,87 @@
 <!DOCTYPE html>
-<html lang="ko">
+
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자기소개</title>
-    <link rel="stylesheet" href="98_자기소개.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>자기소개</title>
+<link rel="stylesheet" href="98_자기소개.css">
 </head>
+
 <body>
-    <div id="container">
-        <aside class="aside">
-            <div class="aside-top">
-                <div id="namecard">
-                    <div class="name">소채연</div>
-                    <img src="media/너구리.png" class="profileImg" alt="너구리">
-                    <div class="hi">안녕하세요!!!!!!!</div>
-                </div>
-                <div id="detail">
-                    <div class="detail-item"><img src="media/house.png" class="detailImg">Incheon, Korea</div>
-                    <div class="detail-item"><img src="media/call.png" class="detailImg">010-1234-5678</div>
-                </div>
-            </div>
-            <div id="detail-bot">
-                <div id="time"></div>
-                <div id="sns">
-                    <a href="https://youtube.com/shorts/_8romrEIY6c?si=tNOIAbqoGDBR3tLQ" target="_blank"><img class="snsImg" src="media/youtube.png"></a>
-                    <a href="https://discord.com/" target="_blank"><img class="snsImg" src="media/discord.png"></a>
-                    <a href="https://ko.wikipedia.org/wiki/Gmail" target="_blank"><img class="snsImg" src="media/mail.png"></a>
-                    <a href="https://apps-kakaocorp.com/" target="_blank"><img class="snsImg" src="media/kakao.png"></a>
-                </div>
-            </div>
-        </aside>
 
-        <main id="main-area">
-            <nav id="top-menu">
-                <button onclick="showSection('intro')">자기소개</button>
-                <button onclick="showSection('experience')">경험</button>
-                <button onclick="showSection('skills')">보유기술</button>
-                <button onclick="showSection('education')">학력</button>
-                <button onclick="showSection('hobby')">취미</button>
-            </nav>
+<div class="paper">
 
-            <div id="content">
-                <section id="intro" class="tab-content active">
-                    <h2 class="subtitle">자기소개</h2>
-                    <div class="intro-contents">
-                        <div><mark>프로그래밍</mark>에 관심은.. 있읍니다.</div> 
-                        <div><br>현재 열심히 놀며 코딩 중!</div>
-                        <div><br>디자인 못함</div> 
-                        <div><br>내용 넣을 게 없어요</div> 
-                        <div><br>엄... 음 ,..,,,, ,,,</div> 
-                        <div><br>감기가 2주째 안 나아요</div> 
-                    </div>
-                    <div class="line"></div>
-                    <h2 class="subtitle">일일 목표</h2>
-                    <div class="intro-contents">
-                        <div><img class="goal" src="/media/보유기술.png" alt=""></div>
-                    </div>
-                </section>
+<header class="top">
 
-                <section id="experience" class="tab-content">
-                    <h2 class="subtitle">경험</h2>
-                    <ul>
-                        <li><strong>프론트엔드</strong>
-                            <ul>
-                                <li>HTML/CSS/JAVASCRIPT</li>
-                                <li>지금 만들고 있는 거</li>
-                                <li>웹 페이지 잘 만들고 싶음</li>
-                            </ul>
-                            <div class="line">
-                        </li>
-                        <li><strong>백엔드</strong>
-                            <ul>
-                                <li>인데 프론트도 조금 만짐</li>
-                                <li>Spring</li>
-                                <li>대충 이런 거 만듦</li>
-                                <img class="hobbyImg" src="media/이런거함.png" alt="">네 망햇어요
-                            </ul>
-                            <div class="line">
-                        </li>
-                        
-                    </ul>
-                </section>
+<div class="profile-area">
+<img src="media/너구리.png" class="profile">
+<div class="bubble">
+안녕하세요<br>
+소채연입니다
+</div>
+</div>
 
-                <section id="skills" class="tab-content">
-                    <h2 class="subtitle">보유 기술</h2>
-                    <ul>
-                        <li>JAVA</li>
-                        <li>ORACLE</li>
-                        <li>HTML/CSS/JAVASCRIPT</li>
-                        <li>밥 느리게 먹기</li>
-                        <li>간식 많이 먹기</li>
-                        <li>수업 내용 까먹기</li>
-                        <li>누워있기</li>
-                        <li>대충 살기</li>
-                    </ul>
-                    <h2 class="subtitle">자격증</h2>
-                    <ul>
-                        <li>너구리로 태어나기 1급</li>
-                        <li>너굴너굴기사</li>
-                    </ul>
-                </section>
+<div class="clock-badge">
+<div id="time"></div>
+</div>
 
-                <section id="education" class="tab-content">
-                    <h2 class="subtitle">학력</h2>
-                    <table class="edu-table">
-                            <tr>
-                                <th>출신학교</th>
-                                <th>전공</th>
-                                <th>기간</th>
-                                <th>구분</th>
-                            </tr>
-                            <tr>
-                                <td>너구리대학교</td>
-                                <td>컴퓨터공학부</td>
-                                <td>2022.3 ~ 2026.2</td>
-                                <td>졸업</td>
-                            </tr>
-                            <tr>
-                                <td>눠구리고등학교</td>
-                                <td>-</td>
-                                <td>2019.3 ~ 까먹음</td>
-                                <td>졸업</td>
-                            </tr>
-                            <tr>
-                                <td>너굴중학교</td>
-                                <td>-</td>
-                                <td>생각하기 귀찮음</td>
-                                <td>졸업</td>
-                            </tr>
-                    </table>
-                </section>
-                 <section id="hobby" class="tab-content">
-                    <h2 class="subtitle">취미</h2>
-                        <ul>
-                        <li><strong>그림</strong>
-                            
-                            <div class="line">
-                        </li>
-                        <li><strong>게임</strong>
-                            <div class="line">
-                        </li>
-                        <li><strong>기타등등</strong>
-                            
-                            <div class="line">
-                        </li>
-                        
-                    </ul>
-                </section>
-            </div>
-        </main>
-    </div>
+</header>
 
-    
+<section class="note about">
+<h2>ABOUT</h2>
+<p>
+프로그래밍에 관심이 많습니다.
+현재 열심히 공부하며 코딩 중!
+</p>
+</section>
+
+<section class="note skill">
+<h2>SKILLS</h2>
+
+<div class="chip">JAVA</div>
+<div class="chip">ORACLE</div>
+<div class="chip">HTML</div>
+<div class="chip">CSS</div>
+<div class="chip">JAVASCRIPT</div>
+<div class="chip">잠자기</div>
+
+</section>
+
+<section class="note project">
+<h2>PROJECT</h2>
+
+<div class="project-card">
+<h3>너구리 라쿤 판별 서비스</h3>
+<p>문장 임베딩 기반 너구리와 라쿤 분석 웹</p>
+</div>
+
+<div class="project-card">
+<h3>개쩌는 웹사이트</h3>
+<p> ... 더보기</p>
+</div>
+
+</section>
+
+<section class="note hobby">
+<h2>HOBBY</h2>
+<p>그림 · 게임 · 누워있기 · 간식먹기</p>
+</section>
+
+</div>
+
+<script>
+setInterval(()=>{
+let datetime = new Date();
+let obj = document.querySelector("#time");
+let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+let time = datetime.getHours() + " : "
++ minutes + " : "
++ second;
+obj.innerHTML = time;
+},1000);
+</script>
+
 </body>
 </html>
-<script>
-    setInterval(()=>{
-        let datetime = new Date();
-        let obj = document.querySelector("#time");
-        let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-        let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-        let time = datetime.getHours() + " : "
-                    + minutes + " : "
-                    + second;
-
-        obj.innerHTML = time;
-    }, 1000);
-    function showSection(id) {
-        const sections = document.querySelectorAll('.tab-content');
-        sections.forEach(s => s.classList.remove('active'));
-        document.getElementById(id).classList.add('active');
-    }
-</script>

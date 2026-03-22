@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>!
+<meta charset="UTF-8">
+<title>인트로</title>
+<link rel="stylesheet" href="98_인트로.css">
+</head>
+
+<body>
+
+<div class="intro-wrap">
+
+<img src="media/너구리.png" class="intro-img">
+
+<div class="title">SO CHAEYEON</div>
+<div class="sub">어서오세요</div>
+
+<button class="start-btn" onclick="goMain()">들어가기</button>
+
+</div>
+
+<script>
+function goMain(){
+    if(confirm("정말 들어가시겠읍니까!!")){
+        alert("어서오세오");
+        location.href="98_자기소개.html";
+    } else {
+        return;
+    }
+}
+</script>
+
+</body>
+</html>
