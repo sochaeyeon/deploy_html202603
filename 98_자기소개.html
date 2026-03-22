@@ -2,86 +2,96 @@
 
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>자기소개</title>
-<link rel="stylesheet" href="98_자기소개.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <link rel="stylesheet" href="98_자기소개.css">
 </head>
 
 <body>
-
-<div class="paper">
-
-<header class="top">
-
-<div class="profile-area">
-<img src="media/너구리.png" class="profile">
-<div class="bubble">
-안녕하세요<br>
-소채연입니다
-</div>
-</div>
-
-<div class="clock-badge">
-<div id="time"></div>
-</div>
-
-</header>
-
-<section class="note about">
-<h2>ABOUT</h2>
-<p>
-프로그래밍에 관심이 많습니다.
-현재 열심히 공부하며 코딩 중!
-</p>
-</section>
-
-<section class="note skill">
-<h2>SKILLS</h2>
-
-<div class="chip">JAVA</div>
-<div class="chip">ORACLE</div>
-<div class="chip">HTML</div>
-<div class="chip">CSS</div>
-<div class="chip">JAVASCRIPT</div>
-<div class="chip">잠자기</div>
-
-</section>
-
-<section class="note project">
-<h2>PROJECT</h2>
-
-<div class="project-card">
-<h3>너구리 라쿤 판별 서비스</h3>
-<p>문장 임베딩 기반 너구리와 라쿤 분석 웹</p>
-</div>
-
-<div class="project-card">
-<h3>개쩌는 웹사이트</h3>
-<p> ... 더보기</p>
-</div>
-
-</section>
-
-<section class="note hobby">
-<h2>HOBBY</h2>
-<p>그림 · 게임 · 누워있기 · 간식먹기</p>
-</section>
-
-</div>
-
-<script>
-setInterval(()=>{
-let datetime = new Date();
-let obj = document.querySelector("#time");
-let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
-let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
-let time = datetime.getHours() + " : "
-+ minutes + " : "
-+ second;
-obj.innerHTML = time;
-},1000);
-</script>
-
-</body>
+    <div class="container">
+            <header class="top">
+                <div class="profile-area">
+                    <img src="media/너구리.png" class="profile">
+                    <div class="bubble">
+                        안녕하세요<br>
+                        소채연입니다
+                    </div>
+                </div>
+                <div class="clock-badge">
+                    <div id="time"></div>
+                </div>
+            </header>
+            <section class="note about">
+                <h2>ABOUT</h2>
+                <p>
+                    프로그래밍에 관심이 많습니다.
+                    현재 열심히 공부하며 코딩 중!
+                </p>
+            </section>
+            <section class="note school">
+                <h2>EDUCATION</h2> 
+                <table class="school-table">
+                    <tr>
+                        <th>학교</th>
+                        <th>전공</th>
+                        <th>기간</th>
+                    </tr>
+                    <tr>
+                        <td>너구리대학교</td>
+                        <td>컴퓨터공학과</td>
+                        <td>2022.3 ~ 2026.2</td>
+                    </tr>
+                    <tr>    
+                        <td>너구리고등학교</td>
+                        <td> - </td>
+                        <td>2019.3 ~ 2022.2</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="note skill">
+                <h2>SKILLS</h2>
+                <div class="chip">JAVA</div>
+                <div class="chip">ORACLE</div>
+                <div class="chip">HTML</div>
+                <div class="chip">CSS</div>
+                <div class="chip">JAVASCRIPT</div>
+                <div class="chip">잠자기</div>
+            </section>
+            <section class="note project">
+                <h2>PROJECT</h2>
+                <div class="project-card">
+                    <h3>너구리 라쿤 판별 서비스</h3>
+                    <p>문장 임베딩 기반 너구리와 라쿤 분석 웹</p>
+                </div>
+                <div class="project-card">
+                    <h3>개쩌는 웹사이트</h3>
+                    <p> ... 더보기</p>
+                </div>
+            </section>
+            <section class="note hobby">
+                <h2>HOBBY</h2>
+                <p>그림 · 게임 · 누워있기 · 간식먹기</p>
+            </section>
+            <section class="note contact">
+                <h2>CONTACT</h2>
+                <ul class="contact-list">
+                    <li>Email : sochae@....com</li>
+                    <li>Phone : 010-1234-5678</li>
+                    <li>GitHub : github.com/</li>
+                    <li>Instagram : @...</li>
+                </ul>
+            </section>
+        </div>
+    </body>
 </html>
+<script>
+    setInterval(()=>{
+        let datetime = new Date();
+        let obj = document.querySelector("#time");
+        let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+        let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
+        let time = datetime.getHours() + " : " + minutes + " : " + second;
+        obj.innerHTML = time;
+     },1000);
+</script>
